@@ -1,5 +1,6 @@
 
 import './App.css'
+import MovieCard from './components/moviesCard';
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
       </div>
       <Text display="How're you?" />
       <Text display="I hope fine." /> */}
-      
+      <MovieCard movie={{title: "Tim's Film", release: "2024"}} />
     </>
   );
 }
