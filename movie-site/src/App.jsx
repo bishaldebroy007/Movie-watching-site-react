@@ -1,5 +1,6 @@
 
 import './App.css'
+import Home from "./pages/Home"
 import MovieCard from './components/moviesCard';
 
 function App() {
@@ -11,7 +12,9 @@ function App() {
       </div>
       <Text display="How're you?" />
       <Text display="I hope fine." /> */}
-      <MovieCard movie={{title: "Tim's Film", release: "2024"}} />
+
+      {/* <MovieCard movie={{title: "Tim's Film", release: "2024"}} /> */}
+      <Home />
     </>
   );
 }
@@ -23,4 +26,4 @@ function App() {
 //   );
 // }
 
-export default App
+export default App;
