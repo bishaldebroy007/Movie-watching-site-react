@@ -1,29 +1,24 @@
 
 import './App.css'
-import Home from "./pages/Home"
-import MovieCard from './components/moviesCard';
+import Favorites from './pages/Favourites';
+import Home from "./pages/Home";
+
+// import MovieCard from './components/moviesCard';
+import {Routes, Route} from "react-router-dom";
 
 function App() {
 
   return (
-    <>
-      {/* <div>
-        <p>Hello</p>
-      </div>
-      <Text display="How're you?" />
-      <Text display="I hope fine." /> */}
+    <main className='main-content'>
 
-      {/* <MovieCard movie={{title: "Tim's Film", release: "2024"}} /> */}
-      <Home />
-    </>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/favorites' element={<Favorites />} /> 
+      </Routes>
+    </main>
   );
 }
 
-// making a component = learning
-// function Text({ display }) {
-//   return (
-//     <p>{display}</p>
-//   );
-// }
+// Time Frame: 52:37
 
 export default App;
